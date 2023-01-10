@@ -85,7 +85,7 @@ Know how to use the update policy:
 * SuspendProcesses: This prevents Auto Scaling from interfering with a stack update
 * MinSuccessfulInstancesPercent: The percentage of instances in an Auto Scaling rolling update that must signal success for an update to succeed.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>AWS CloudFormation Update Options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>AWS CloudFormation Update Options</p></figcaption></figure>
 
 #### Layering and Nesting templates
 
@@ -99,7 +99,7 @@ With the exception of a few inherent dependencies, the CloudFormation will manag
 
 DependsOn is the simplest and most common of these dependency types.&#x20;
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>DependsOn example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>DependsOn example</p></figcaption></figure>
 
 In this example, the application instance depends on the launching of the RDS instance. If this was a database engine running inside an EC2 instance, DependsOn would not be the best option to use. This is where WaitCondition comes into play:
 
@@ -124,7 +124,7 @@ The WaitCondition waits for the WaitConditionHandle to be signalled before it is
 * **cfn-signal**: Provides completion signal of a CreationPolicy or WaitCondition
 * **cfn-get-metadata**: View the metadata that is stored in a CloudFormation stack.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>cfn-hup example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>cfn-hup example</p></figcaption></figure>
 
 Cfn-hup is a way to set CloudFormation on reevaluating the CloudFormation template metadata. Setting the interval at which CloudFormation will reevaluate the metadata is important because updates to the metadata do not automatically trigger a stack update. Using cfn-hup will provide that update ability.
 
@@ -145,11 +145,11 @@ AWS Elastic Beanstalk is a management tool for quickly getting applications depl
 
 Important to know the different components of an Elastic Beanstalk build and application. What customisations can you manage and what controls do you have with each one of these areas?
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>AWS Elastic Beanstalk: Components</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>AWS Elastic Beanstalk: Components</p></figcaption></figure>
 
 #### AWS Elastic Beanstalk: Environments
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>AWS Elastic Beanstalk: environment example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>AWS Elastic Beanstalk: environment example</p></figcaption></figure>
 
 In this example, there are three environments: test, staging and production. Each is configured to use a custom AMI on its underlying EC2 instance.
 
@@ -170,7 +170,7 @@ AWS OpsWorks is a configuration management service that allows you to configure 
   * AWS OpsWorks for Puppet Enterprise
   * AWS OpsWorks Stacks
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>AWS OpsWorks Cheatsheet</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>AWS OpsWorks Cheatsheet</p></figcaption></figure>
 
 It is important to remember that OpsWorks includes automation to scale your application and dynamic configuration to orchestrate changes as your environment scales.
 

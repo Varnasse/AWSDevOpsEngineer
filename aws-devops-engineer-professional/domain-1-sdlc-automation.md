@@ -29,7 +29,7 @@ Certification Objectives
 
 **Continuous Delivery Process**
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Continuous Delivery Flowchart</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Continuous Delivery Flowchart</p></figcaption></figure>
 
 **Continuous Deployment Goals**
 
@@ -39,7 +39,7 @@ Certification Objectives
 
 ### AWS Code Services
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>AWS Code Services</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>AWS Code Services</p></figcaption></figure>
 
 #### AWS CodeCommit
 
@@ -56,7 +56,7 @@ Ensure you are following the best practices of branching:
 * Features and necessary debugging should happen on their own branch, and then should be merged back into the master branch when ready to commit the changes
 * Additionally, to avoid merge conflicts with the master branch, you should make small and frequent changes and quickly rejoin them back into the master branch.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>Best practices of branching</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Best practices of branching</p></figcaption></figure>
 
 * Checking branches with AWS CloudWatch:
   * Team members make changes and push their code to CodeCommit
@@ -76,17 +76,17 @@ This allows you to build and test your code on scalable infrastructure, managed 
 
 CodeBuild uses a build specification file or buildspec file, for short. This is a YAML formatted file that outlines the necessary steps that CodeBuild must follow.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Example YAML file.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>Example YAML file.</p></figcaption></figure>
 
 **How does AWS CodeBuild work?**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>CodeBuild flowchart</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>CodeBuild flowchart</p></figcaption></figure>
 
 #### Jenkins as a CI server
 
 Jenkins can be used to handle the build and test processes which could be integrated with or replace CodeBuild:
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Jenkins example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p>Jenkins example</p></figcaption></figure>
 
 Understanding the limitations of using Jenkins as it is an unmanaged service on a single EC2 instance could lead to fault tolerance and scalability issues in the architecture.
 
@@ -105,7 +105,7 @@ Note though, CodeDeploy only handles deploying and installing the application an
 
 Just as with CodeBuild, CodeDeploy has its own specification file, called the AppSpec file:
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>CodeDeploy AppSpec file</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>CodeDeploy AppSpec file</p></figcaption></figure>
 
 #### Understanding Revisions
 
@@ -114,7 +114,7 @@ When deploying with CodeDeploy, it creates a revision of the application. This r
 * The source code files and the AppSpec files.
 * This revision is then used by the agent to direct what it is supposed to do, as well as, give it the necessary artefacts that it needs to work with.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Understanding revisions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Understanding revisions</p></figcaption></figure>
 
 **AWS CodeDeploy: In-place deployment**
 
@@ -124,7 +124,7 @@ From there, a revision is created in CodeDeploy to outline the tasks that need t
 
 The agent then evaluates the revision, processes through the AppSpec file and pulls the necessary components and handles the revision on the instance.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>AWS CodeDeploy In-place deployment flowchart</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>AWS CodeDeploy In-place deployment flowchart</p></figcaption></figure>
 
 #### Deployment Strategies
 
