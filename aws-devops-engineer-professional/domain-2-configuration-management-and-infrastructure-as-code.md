@@ -85,7 +85,7 @@ Know how to use the update policy:
 * SuspendProcesses: This prevents Auto Scaling from interfering with a stack update
 * MinSuccessfulInstancesPercent: The percentage of instances in an Auto Scaling rolling update that must signal success for an update to succeed.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>AWS CloudFormation Update Options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>AWS CloudFormation Update Options</p></figcaption></figure>
 
 #### Layering and Nesting templates
 
@@ -99,7 +99,7 @@ With the exception of a few inherent dependencies, the CloudFormation will manag
 
 DependsOn is the simplest and most common of these dependency types.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>DependsOn example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>DependsOn example</p></figcaption></figure>
 
 In this example, the application instance depends on the launching of the RDS instance. If this was a database engine running inside an EC2 instance, DependsOn would not be the best option to use. This is where WaitCondition comes into play:
 
@@ -149,7 +149,7 @@ Important to know the different components of an Elastic Beanstalk build and app
 
 #### AWS Elastic Beanstalk: Environments
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>AWS Elastic Beanstalk: environment example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>AWS Elastic Beanstalk: environment example</p></figcaption></figure>
 
 In this example, there are three environments: test, staging and production. Each is configured to use a custom AMI on its underlying EC2 instance.
 

@@ -29,7 +29,7 @@ Important CloudWatch metrics:
 
 Key Metrics for Exam:
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Amazon CloudWatch metrics</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Amazon CloudWatch metrics</p></figcaption></figure>
 
 Know these ELB metrics:
 
@@ -85,7 +85,7 @@ A target simply receives the events in JSON formatting and then processes the ev
 
 #### Visualising Amazon CloudWatch
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Amazon CloudWatch flowchart example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Amazon CloudWatch flowchart example</p></figcaption></figure>
 
 ### Additional monitoring and logging services
 
@@ -127,7 +127,7 @@ Utilising this service, we can track a single call as it makes its way through o
 * Use Kinesis data streams if real-time logs are needed. However, it required more effort to set up and manage.
 * A good use case to implement Kinesis Firehose is if you centralize CloudWatch log events and move the data to S3 for longer retention and storage
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Using Kinesis to gather and process logging data</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Using Kinesis to gather and process logging data</p></figcaption></figure>
 
 #### Logging best practices
 
