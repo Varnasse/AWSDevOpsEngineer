@@ -145,7 +145,7 @@ AWS Elastic Beanstalk is a management tool for quickly getting applications depl
 
 Important to know the different components of an Elastic Beanstalk build and application. What customisations can you manage and what controls do you have with each one of these areas?
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>AWS Elastic Beanstalk: Components</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>AWS Elastic Beanstalk: Components</p></figcaption></figure>
 
 #### AWS Elastic Beanstalk: Environments
 
@@ -170,7 +170,7 @@ AWS OpsWorks is a configuration management service that allows you to configure 
   * AWS OpsWorks for Puppet Enterprise
   * AWS OpsWorks Stacks
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>AWS OpsWorks Cheatsheet</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>AWS OpsWorks Cheatsheet</p></figcaption></figure>
 
 It is important to remember that OpsWorks includes automation to scale your application and dynamic configuration to orchestrate changes as your environment scales.
 
