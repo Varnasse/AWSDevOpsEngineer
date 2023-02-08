@@ -6,7 +6,7 @@ description: >-
 
 # Domain 2: Configuration Management and Infrastructure as Code
 
-### managementCertification Objectives
+### Certification Objectives
 
 * Determine deployment services based on deployment needs
 * Determine application and infrastructure deployment models based on business needs
